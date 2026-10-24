@@ -1,0 +1,103 @@
+
+/* Page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeaf7;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Calculator box */
+.calculator {
+    width: 280px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(50, 30, 80, 0.15);
+    text-align: center;
+}
+/* Calculator heading */
+h2 {
+    color: #493568;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+/* Result display */
+#result {
+    background-color: #f5f2fa;
+    color: #302344;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    padding: 18px 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ded5ed;
+    min-height: 35px;
+    overflow-wrap: anywhere;
+}
+/* Buttons container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* All buttons */
+button {
+    padding: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #493568;
+    background-color: #e8e0f3;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #d3c2eb;
+    transform: translateY(-2px);
+}
+
+/* Click effect */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Operator button */
+button:nth-child(2) {
+    background-color: #8064a9;
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #6a4d94;
+}
+
+/* Equals button */
+button:nth-child(4) {
+    background-color: #493568;
+    color: white;
+}
+
+button:nth-child(4):hover {
+    background-color: #352448;
+}
+
+/* Clear button */
+button:nth-child(5) {
+    background-color: #f5dce2;
+    color: #a52d4b;
+}
+
+button:nth-child(5):hover {
+    background-color: #edc2ce;
+}
